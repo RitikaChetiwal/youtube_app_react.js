@@ -1,5 +1,4 @@
-import React from 'react';
-import '../../App.css';
+// import '../../App.css';
 
 export const Video = ({ videoDetails, setMainvideo }) => {
   console.log(videoDetails);

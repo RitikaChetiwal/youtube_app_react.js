@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
+import { useState } from 'react';
+// import './App.css';
 import { Searchbar } from './youtube-app/components/Searchbar';
 import { Mainvideo } from './youtube-app/components/Mainvideo';
 import { Videolist } from './youtube-app/components/Videolist';

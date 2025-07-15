@@ -1,11 +1,10 @@
-import React from 'react';
-import '../../App.css';
+// import '../../App.css';
 
 export const Mainvideo = ({videoReference}) => {
 
   if(!videoReference?.id?.videoId){
     return (
-      <div>
+      <div id='initialState'>
         <h1 className='initialState'>Search Youtube❣️</h1>
       </div>
     )
@@ -17,7 +16,7 @@ export const Mainvideo = ({videoReference}) => {
   return (
     <div className='mainVcomp' style={{width:'750px', height:'520px'}}>
         <div className="box">
-            <iframe src={videoSource} title='Youtube video player' height='491px' width='750px' allowFullScreen></iframe>
+            <iframe src={videoSource} title='Youtube video player' height='491px' width='750px' ></iframe>
         </div>
         <div className="info">
         <div className="title"><h3>Channel name: {videoReference?.snippet?.channelTitle}</h3></div>

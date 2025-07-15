@@ -1,11 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Noto+Sans+Symbols:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 
-.list{
+#initialState{
+  height: 100%;
+  width: 100%;
+  
+}
+
+.initialState {
+  margin-top: 230px;
+  margin-left: 42%;
+  font-size: 55px;
+  width: 500px;
+}
+
+.list {
   display: flex;
   gap: 20px;
   /* border: 2px solid #000; */
@@ -13,25 +34,25 @@ body{
   cursor: pointer;
 }
 
-.rest{
+.rest {
   margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
 }
 
-.listComp{
+.listComp {
   display: flex;
   flex-direction: column;
   gap: 50px;
   /* border: 1px solid #000; */
 }
 
-.searchComp{
+.searchComp {
   text-align: center;
   /* margin-top: 45px; */
   display: flex;
   justify-content: space-between;
-  
+
   /* gap: 20px; */
   /* border-radius: 20px; */
   border: 1px solid #000;
@@ -42,7 +63,7 @@ body{
   /* background: #ccc; */
 }
 
-.inputSearch{
+.inputSearch {
   border: none;
   margin-top: 4px;
   width: 400px;
@@ -50,18 +71,18 @@ body{
   height: 30px;
 }
 
-.inputSearch:focus{
+.inputSearch:focus {
   outline: none;
 }
 
-.searchBar{
+.searchBar {
   /* border: 2px solid red; */
   /* text-align: center; */
   display: flex;
   justify-content: center;
 }
 
-.submitButton{
+.submitButton {
   margin-left: 150px;
   border: none;
   border-radius: 0 20px 20px 0px;
@@ -69,18 +90,18 @@ body{
   cursor: pointer;
 }
 
-.vdo img{
+.vdo img {
   border-radius: 20px;
   /* border: 2px solid black; */
 }
 
-.box iframe{
+.box iframe {
   border-radius: 16px;
   /* border: 2px solid #000; */
 
 }
 
-.navBar{
+.navBar {
   display: flex;
   align-items: center;
   /* border: 2px solid red; */
@@ -89,7 +110,7 @@ body{
   padding: 16px 30px;
 }
 
-.create button{
+.create button {
   font-size: 14px;
   align-items: center;
   border: none;
@@ -99,14 +120,6 @@ body{
   border-radius: 23px;
 }
 
-.initialState{
-  margin-top: 200px;
-  height: 100vh;
-  width: 100vw;
-  margin-left: 36%;
-  font-size: 55px;
-}
-
-.videoInfo .title{
+.videoInfo .title {
   font-size: 15px;
 }
