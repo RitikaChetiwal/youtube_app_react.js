@@ -17,8 +17,8 @@ export const App = () => {
         part: 'snippet',
         maxResults: 8,
         key: 'AIzaSyCNPqeSrU9UwM0jtTRKdQ3I5P7npYddASI',
-        q: query
-      //   url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=query&key=AIzaSyCJcWYk65V9JTcdiCH-7S-lqaY_0Fu4Vpk'
+        q: query,
+        // url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=query&key=AIzaSyCJcWYk65V9JTcdiCH-7S-lqaY_0Fu4Vpk'
       }
     });
     // console.log(`Response data:`,parsedData);

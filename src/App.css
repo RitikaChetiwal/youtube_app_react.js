@@ -30,22 +30,30 @@ body {
   display: flex;
   gap: 20px;
   /* border: 2px solid #000; */
-  width: 450px;
+  width: 420px;
   cursor: pointer;
 }
 
+.vdolist{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
 .rest {
-  margin-top: 20px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-evenly;
 }
-
+/* 
 .listComp {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  /* border: 1px solid #000; */
-}
+} */
+
+
 
 .searchComp {
   text-align: center;
@@ -61,6 +69,22 @@ body {
   height: 43px;
   width: 550px;
   /* background: #ccc; */
+}
+
+.vdoInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vdoInfo .title h4{
+  /* font-weight: normal; */
+  color: #222222;
+  font-size: 14px;
+}
+.vdoInfo .channelTitle{
+  /* font-weight: lighter; */
+  font-size: 12px;
 }
 
 .inputSearch {
@@ -80,6 +104,9 @@ body {
   /* text-align: center; */
   display: flex;
   justify-content: center;
+  position: sticky;
+  /* position: fixed;   */
+  /* width: 100%; */
 }
 
 .submitButton {
@@ -91,7 +118,7 @@ body {
 }
 
 .vdo img {
-  border-radius: 20px;
+  border-radius: 10px;
   /* border: 2px solid black; */
 }
 
@@ -101,13 +128,28 @@ body {
 
 }
 
+.info{
+  margin-top: 10px;
+}
+
+.info .title{
+  margin: 15px;
+}
+
+.desc{
+  margin-top: 10px;
+}
+
 .navBar {
   display: flex;
   align-items: center;
   /* border: 2px solid red; */
   justify-content: space-between;
   width: 100%;
-  padding: 16px 30px;
+  margin-top: 0;
+  position: fixed;
+  background: white;
+  padding: 8px 30px;
 }
 
 .create button {

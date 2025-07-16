@@ -1,8 +1,8 @@
 // import '../../App.css';
 
-export const Mainvideo = ({videoReference}) => {
+export const Mainvideo = ({ videoReference }) => {
 
-  if(!videoReference?.id?.videoId){
+  if (!videoReference?.id?.videoId) {
     return (
       <div id='initialState'>
         <h1 className='initialState'>Search Youtube❣️</h1>
@@ -14,14 +14,17 @@ export const Mainvideo = ({videoReference}) => {
   console.log(videoSource);
 
   return (
-    <div className='mainVcomp' style={{width:'750px', height:'520px'}}>
-        <div className="box">
-            <iframe src={videoSource} title='Youtube video player' height='491px' width='750px' ></iframe>
-        </div>
-        <div className="info">
-        <div className="title"><h3>Channel name: {videoReference?.snippet?.channelTitle}</h3></div>
-        <div className="desc"><h4>Description: {videoReference?.snippet?.description}</h4></div>
-        </div>
+    <div className='mainVcomp' style={{ width: '760px', }}>
+      <div className="box">
+        <iframe src={videoSource} title='Youtube video player' height='480px' width='850px' allowFullScreen></iframe>
+      </div>
+      <div className="info">
+        <div className="title"><h3>{videoReference?.snippet?.title}</h3></div>
+        <div className="title"><h4>Channel name: {videoReference?.snippet?.channelTitle}</h4></div>
+        <div className="desc">
+          <p>{videoReference?.snippet?.publishedAt}</p>
+          <p>Description: {videoReference?.snippet?.description}</p></div>
+      </div>
     </div>
   )
 }

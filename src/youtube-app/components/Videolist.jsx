@@ -10,8 +10,9 @@ export const Videolist = ({ videoList, setMainvideo }) => {
     // console.log(videoList);
 
     return (
-        <div>
-            {videoList.map((vid, index) => <Video videoDetails={vid} setMainvideo={setMainvideo} key={index} />)}
+        <div className='vdolist'>
+            {videoList.map((vid) => <Video videoDetails={vid} setMainvideo={setMainvideo} key={vid.id.videoId}
+            />)}
         </div>
     )
 }
