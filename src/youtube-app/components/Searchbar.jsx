@@ -1,10 +1,7 @@
 import { useState } from 'react';
 
 export const Searchbar = ({submitHandler}) => {
-
     let [search, setSearch] = useState('');
-
-
     return (
         <div className='navBar'>
             <div className="yt-icon">

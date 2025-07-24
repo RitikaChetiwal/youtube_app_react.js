@@ -1,0 +1,13 @@
+.home {
+    /* height: 300px; */
+    /* width: 1500px; */
+    display: flex;
+    gap: 25px;
+    /* border: 2px solid black; */
+    /* margin-bottom: 50px; */
+    /* justify-content: space-between; */
+}
+
+.homevideos{
+    /* border: 2px solid green; */
+}

@@ -1,11 +1,13 @@
 // import '../../App.css';
 
+import HomePage from "./HomePage";
+
 export const Mainvideo = ({ videoReference }) => {
 
   if (!videoReference?.id?.videoId) {
     return (
       <div id='initialState'>
-        <h1 className='initialState'>Search Youtube❣️</h1>
+        <HomePage videRef={videoReference}/>
       </div>
     )
   }
