@@ -1,8 +1,8 @@
 .home {
-    /* height: 300px; */
-    /* width: 1500px; */
+    height: 300px;
+    width: 1500px;
     display: flex;
-    gap: 25px;
+    /* gap: 25px; */
     /* border: 2px solid black; */
     /* margin-bottom: 50px; */
     /* justify-content: space-between; */
@@ -10,4 +10,7 @@
 
 .homevideos{
     /* border: 2px solid green; */
+    width: 500px;
+    height: 500px;
+
 }

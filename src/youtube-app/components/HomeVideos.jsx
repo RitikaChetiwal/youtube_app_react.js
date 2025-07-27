@@ -13,8 +13,9 @@ const HomeVideos = () => {
         const response = await youtube.get("search", {
           params: {
             part: "snippet",
-            maxResults: 8,
-            q: "trending", // default search
+            maxResults: 20,
+            // q: "coding and music", // default search
+            q: "coding and music", // default search
             key: YOUTUBE_API_KEY
           },
         });
@@ -39,7 +40,9 @@ const HomeVideos = () => {
             title={video.snippet.title}
             allowFullScreen
           />
-          <p className="text-sm font-semibold mt-2">{video.snippet.title}</p>
+          <p className="title">{video.snippet.title}</p>
+          <p className="channelTitle">{video.snippet.channelTitle}</p>
+          <p className="publishedAt">{video.snippet.publishedAt}</p>
         </div>
       ))}
     </div>

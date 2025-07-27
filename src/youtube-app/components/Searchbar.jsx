@@ -1,10 +1,25 @@
 import { useState } from 'react';
 
-export const Searchbar = ({submitHandler}) => {
+export const Searchbar = ({ submitHandler }) => {
     let [search, setSearch] = useState('');
     return (
         <div className='navBar'>
-            <div className="yt-icon">
+            
+
+            <div className="yt-icon" style={{display:"flex"}}>
+                
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="35"
+                    viewBox="0 0 24 24"
+                    width="35"
+                    focusable="false"
+                    aria-hidden="true"
+                    className='hover-circle'
+                >
+                    <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z" />
+                </svg>
+
                 <svg xmlns="http://www.w3.org/2000/svg" id="yt-ringo2-svg_yt18" width="93" height="20" viewBox="0 0 93 20" focusable="false" aria-hidden="true" style={{ display: 'inherit', width: '130px', height: '20px' }}>
                     <g>
                         <path d="M14.4848 20C14.4848 20 23.5695 20 25.8229 19.4C27.0917 19.06 28.0459 18.08 28.3808 16.87C29 14.65 29 9.98 29 9.98C29 9.98 29 5.34 28.3808 3.14C28.0459 1.9 27.0917 0.94 25.8229 0.61C23.5695 0 14.4848 0 14.4848 0C14.4848 0 5.42037 0 3.17711 0.61C1.9286 0.94 0.954148 1.9 0.59888 3.14C0 5.34 0 9.98 0 9.98C0 9.98 0 14.65 0.59888 16.87C0.954148 18.08 1.9286 19.06 3.17711 19.4C5.42037 20 14.4848 20 14.4848 20Z" fill="#FF0033"></path>
@@ -28,7 +43,7 @@ export const Searchbar = ({submitHandler}) => {
                 }} className='searchComp'>
                     <input onChange={event => {
                         setSearch(event.target.value);
-                    }} value={search} type="text" placeholder='Search' autoFocus className='inputSearch' />
+                    }} value={search} type="text" placeholder='Search' className='inputSearch' />
                     <button type="submit" className='submitButton'>
                         <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#313131"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" /></svg>
                     </button>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 // import './App.css';
 import { Searchbar } from './youtube-app/components/Searchbar';
 import { Mainvideo } from './youtube-app/components/Mainvideo';
@@ -36,9 +36,9 @@ export const App = () => {
 
     }
   }
-  useEffect(() => {
-    fetchVideos(); // no query → uses default "trending india"
-  }, []);
+  // useEffect(() => {
+  //   fetchVideos(); // no query → uses default "trending india"
+  // }, []);
 
   return (
     <div className="main">

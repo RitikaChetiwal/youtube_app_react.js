@@ -65,13 +65,15 @@ body {
 
   /* gap: 20px; */
   /* border-radius: 20px; */
-  border: 1px solid #000;
+  border: 1px solid #c4c1c1;
   /* padding: 0px 15px; */
   border-radius: 23px;
   height: 43px;
   width: 550px;
   /* background: #ccc; */
 }
+
+
 
 .vdoInfo{
   display: flex;
@@ -141,6 +143,24 @@ body {
 .desc{
   margin-top: 10px;
 }
+
+.yt-icon{
+  display: flex;
+  align-items: center;
+}
+
+.yt-icon svg:first-child {
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 7px;
+  transition: background 0.2s ease;
+}
+
+.yt-icon svg:first-child:hover  {
+  background: #ecedf3;
+  cursor: pointer;
+}
+
 
 .navBar {
   display: flex;
